@@ -96,3 +96,48 @@ cin使用空白（空格、制表符和换行符）来确定字符串的结束�
             cout << str1 << endl;
             return 0;
         }
+
+##### 赋值、拼接和附加   
+可以使用运算符+将两个string对象合并起来
+
+##### string类的其他操作   
+使用函数strcpy()将字符串赋值到字符数组中，使用函数strcat()将字符串附加到字符数组末尾。  
+
+#### 4.4 结构简介  
+
+        struct inflatable
+        {
+            char name[20];
+            float volume;
+            double price;
+        }
+
+程序清单4.11 structur.cpp
+        #include <iostream>
+        struct inflatable
+        {
+            char name[20];
+            float volume;
+            double price;
+        }
+        int main()
+        {
+            using namespace std;
+            inflatable guest = 
+            { 
+                "Glorious Gloria",
+                1.88,
+                29.99
+            };
+            cout << guest.name <<endl;
+            return 0;
+        }
+
+可以同时完成定义结构和创建结构变量的工作，只需要将变量名放在结束括号的后面即可：  
+        struct perks
+        {
+            int key_number;
+            char car[12];
+        }mr_smith, ms_jones;
+
+#### 4.5 共用体  
