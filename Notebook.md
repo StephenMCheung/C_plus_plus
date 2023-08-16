@@ -54,6 +54,7 @@ C++允许拼接字符串字面值，即将两个用引号括起来的字符串�
 
 ##### 在数组中使用字符串   
 要将字符串存储到数组中，最常用的方法有两种：将数组初始化为字符串常量；将键盘或文件输入读入到数组中。   
+
         #include <iostream>
         #include <cstring>
         int main()
@@ -78,6 +79,7 @@ cin使用空白（空格、制表符和换行符）来确定字符串的结束�
 
 #### 4.3 string类简介  
 要使用string类，必须在程序中包含头文件string。  
+
         #include <iostream>
         #include <string>
         int main()
