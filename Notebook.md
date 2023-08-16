@@ -52,45 +52,45 @@ C++处理字符串的方式有两种。第一种来自C语言，称为C风格字
 ##### 拼接字符串常量  
 C++允许拼接字符串字面值，即将两个用引号括起来的字符串合并为一个。  
 
-##### 在数组中使用字符串  
+##### 在数组中使用字符串   
 要将字符串存储到数组中，最常用的方法有两种：将数组初始化为字符串常量；将键盘或文件输入读入到数组中。   
-    #include <iostream>
-    #include <cstring>
-    int main()
-    {
-        using namespace std;
-        const int Size = 15;
-        char name1[Size];
-        char name2[Size] = "C++owboy";
+        #include <iostream>
+        #include <cstring>
+        int main()
+        {
+            using namespace std;
+            const int Size = 15;
+            char name1[Size];
+            char name2[Size] = "C++owboy";
 
-        cout << "Howdy! I'm " << name2 << "! What's your name?\n"
-        return 0;
-    }
+            cout << "Howdy! I'm " << name2 << "! What's your name?\n"
+            return 0;
+        }
 
 ##### 字符串输入  
 cin使用空白（空格、制表符和换行符）来确定字符串的结束位置，这意味着cin在获取字符数组输入时只读取一个单词。   
 
 ##### 每次读取一行字符串输入   
-- 面向行的输入：getline()
+- 面向行的输入：getline()  
 - 面向行的输入：get()
 
 ##### 混合输入字符串和数字  
 
 #### 4.3 string类简介  
 要使用string类，必须在程序中包含头文件string。  
-    #include <iostream>
-    #include <string>
-    int main()
-    {
-        using namespace std;
-        char charr1[20];
-        char charr2[20] = "jaguar";
-        string str1;
-        string str2 = "panther";
+        #include <iostream>
+        #include <string>
+        int main()
+        {
+            using namespace std;
+            char charr1[20];
+            char charr2[20] = "jaguar";
+            string str1;
+            string str2 = "panther";
 
-        cin >> charr1;
-        cout << charr1 << endl;
-        cin >> str1;
-        cout << str1 << endl;
-        return 0;
-    }
+            cin >> charr1;
+            cout << charr1 << endl;
+            cin >> str1;
+            cout << str1 << endl;
+            return 0;
+        }
