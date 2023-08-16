@@ -112,7 +112,8 @@ cin使用空白（空格、制表符和换行符）来确定字符串的结束�
             double price;
         }
 
-程序清单4.11 structur.cpp
+程序清单4.11 structur.cpp   
+
         #include <iostream>
         struct inflatable
         {
