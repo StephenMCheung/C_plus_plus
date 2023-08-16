@@ -165,4 +165,48 @@ cin使用空白（空格、制表符和换行符）来确定字符串的结束�
 
     int a = 100;
     int* p = &a;
+    *p
     
+##### 使用new来分配内存
+
+    int* p = new int;
+    *p = 100;
+    delete p;
+
+##### 使用new来创建动态数组
+
+    int* p = new int[10];
+    delete [] p;
+
+#### 4.8 指针、数组和指针算数
+
+将整数变量加1后，其值将增加1；但将指针变量加1后，增加的量等于它指向的类型的字节数。  
+C++将数组名解释为数组第一个元素的地址。
+
+#### 4.9 类型组合
+
+数组、结构体和指针的组合......
+
+#### 4.10 数组的替代品
+
+##### 模板类vector  
+    #include <vector>
+    ...
+    using namespace std;
+    vector<int> vi;
+    int n;
+    cin >> n;
+    vector<double> vd(n);
+
+##### 模板类array   
+    #include <array>
+    ...
+    using namespace std;
+    array<int, 5> ai;
+    array<double, 4> ad = {1.2, 2.1, 3.43, 4.3};
+
+##### 比较数组、vector和array
+
+- 三者都可使用标准数组表示法来访问各个元素；
+- array对象和数组存储在相同的内存区域（栈）中，而vector存储在自由存储区域或堆中；
+- 可以将一个array对象赋值给另一个array对象，而对于数组，必须逐元素赋值数据。
