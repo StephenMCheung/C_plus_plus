@@ -10,24 +10,24 @@ typeName arrayName[arraySize];
 
 程序清单4.1 arrayone.cpp  
   
-  #include <iostream>
-  int main()
-  {
-      using namesapce std;
-      int yams[3];
-      yams[0] = 7;
-      yams[1] = 8;
-      yams[2] = 6;
+    #include <iostream>
+    int main()
+    {
+        using namesapce std;
+        int yams[3];
+        yams[0] = 7;
+        yams[1] = 8;
+        yams[2] = 6;
 
-      int yamcosts[3] = {20, 30, 5};
-       cout << "Total yams = " << yams[0] + yams[1] + yams[2] << endl;
-       cout << "The package with " << yams[1] << " yams costs " << yamcosts[1] << " cents peryam.\n";
-       int total = yams[0] * yamcosts[0] + yams[1] * yamcosts[1];
-       total = total + yams[2] * yamcsots[2];
-       cout << "The total yam expense is " << total << " cents.\n";
+        int yamcosts[3] = {20, 30, 5};
+        cout << "Total yams = " << yams[0] + yams[1] + yams[2] << endl;
+        cout << "The package with " << yams[1] << " yams costs " << yamcosts[1] << " cents peryam.\n";
+        int total = yams[0] * yamcosts[0] + yams[1] * yamcosts[1];
+        total = total + yams[2] * yamcsots[2];
+        cout << "The total yam expense is " << total << " cents.\n";
 
-       return 0
-  }
+        return 0
+    }
 
 ##### 数组初始化的规则
 - 只有在定义数组时才能使用初始化，此后就不能使用了，也不能将一个数组赋给另一个数组；
