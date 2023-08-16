@@ -143,3 +143,26 @@ cin使用空白（空格、制表符和换行符）来确定字符串的结束�
         }mr_smith, ms_jones;
 
 #### 4.5 共用体  
+共用体是一种数据格式，能够存储不同的数据类型，但是只能同时存储其中的一种类型。也就是说，结构体可以存储int、long和double，共用体只能存储int、long或double。
+
+    union one4all
+    {
+        int int_val;
+        long long_val;
+        double double_val;
+    };
+
+公用体的用途之一是，当数据项使用两种或更多种俄式时，可节省空间。  
+匿名共用体没有名称，其成员将成为位于相同地址处的便变量。
+
+#### 4.6 枚举
+
+    enum spectrum {red, orange, yellow, green, blue, violet, indigo, ultraviolet};
+
+#### 4.7 指针和自由存储空间
+
+指针是一个变量，其存储的是值的内存地址。  
+
+    int a = 100;
+    int* p = &a;
+    
