@@ -9,6 +9,7 @@
 typeName arrayName[arraySize];
 
 程序清单4.1 arrayone.cpp  
+  
   #include <iostream>
   int main()
   {
